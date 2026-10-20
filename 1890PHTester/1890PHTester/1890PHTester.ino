@@ -1,9 +1,15 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "includes/Drivers/SSD1306.h"
+
+SSD1306Display oled;
+
+void setup() 
+{
+  oled.begin();
 
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+void loop()
+{
+ 
+  oled.showDisplay("Test",12);
 }
